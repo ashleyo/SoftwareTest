@@ -10,12 +10,14 @@ def is_palindrome(word):
     """
 
     # Convert the word to lowercase and remove non-alphanumeric characters.
-    word = ''.join(char.lower() for char in word if char.isalnum())
+    word = "".join(char.lower() for char in word if char.isalnum())
 
     # Check if the word is the same forwards and backwards.
     return word == word[::-1]
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     print(is_palindrome("racecar"))  # True
-    print(is_palindrome("hello"))    # False
+    print(is_palindrome("hello"))  # False
     print("Expecting True False above")
+    
